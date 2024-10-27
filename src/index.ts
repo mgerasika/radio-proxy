@@ -3,7 +3,7 @@ import ffmpeg from 'fluent-ffmpeg';
 import { PassThrough } from 'stream';
 
 const app = express();
-const PORT = 8001;
+const PORT = process.env.PORT || 8001;
 
 const inputStreamUrl = 'http://live.radioec.com.ua:8000/drimayko';
 
